@@ -17,7 +17,7 @@ class SongController extends AbstractController
         $song = [
             'id' => $id,
             'name' => 'Waterfalls',
-            'url' => 'https://symfonycasts.s3.amazonaws.com/sample.mp3',
+            'url' => '/summer-walk.mp3',
         ];
 
         $logger->info('Returning API response for song {song}', [
