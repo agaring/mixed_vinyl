@@ -4,20 +4,19 @@ namespace App\Controller;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class SongController extends AbstractController
 {
-    #[Route('/api/song/{id<\d+>}', name: 'api_songs_get_one', methods: 'GET')]
-    function getSong(int $id, LoggerInterface $logger): Response
+    #[Route('/api/songs/{id<\d+>}', name: 'api_songs_get_one', methods: 'GET')]
+    public function getSong(int $id, LoggerInterface $logger): Response
     {
-        // todo: query the database
+        // TODO query the database
         $song = [
             'id' => $id,
             'name' => 'Waterfalls',
-            'url' => '/summer-walk.mp3',
+            'url' => 'https://symfonycasts.s3.amazonaws.com/sample.mp3',
         ];
 
         $logger->info('Returning API response for song {song}', [
