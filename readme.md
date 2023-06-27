@@ -20,3 +20,49 @@ J'ai peu apprendre :
 * Comment trouver et implémenter les Services dans un projet symfony
 * Comment créer des élements interactif avec [Stimulus](https://stimulus.hotwired.dev/)
 * Comment accélerer un site via [Turbo](https://turbo.hotwired.dev/)
+
+## Installation
+
+**Composer**
+
+Assurez-vous que vous avez [Composer installé](https://getcomposer.org/download/) puis exécutez :
+
+```shell
+composer install
+```
+
+Vous pouvez également lancer `php composer.phar install`, en fonction de la façon dont vous avez installé Composer.
+
+**Webpack Encore**
+
+Cette application utilise Webpack Encore pour les fichiers CSS, JS et images.
+
+Assurez-vous d'avoir installé [yarn](https://yarnpkg.com/lang/en/) ou `npm` installé (`npm` est livré avec Node) et
+ensuite lancez :
+
+```shell
+yarn install
+yarn encore dev --watch
+
+# ou
+npm install
+npm run watch
+```
+
+**Symfony**
+
+Vous pouvez utiliser Nginx ou Apache, mais le serveur web local de Symfony fonctionne encore mieux.
+
+Pour installer le serveur web local Symfony, suivez les instructions de "Downloading the Symfony client" trouvées
+ici : https://symfony.com/download - vous n'avez besoin de faire cela qu'une seule fois sur votre système.
+
+Ensuite, pour démarrer le serveur web, ouvrez un terminal, placez-vous dans le projet et exécutez :
+
+```shell
+symfony serve
+```
+
+(Si c'est la première fois que vous utilisez cette commande, il se peut que vous voyiez une erreur indiquant que vous
+devez d'abord lancer `symfony server:ca:install`).
+
+Maintenant, regardez le site à `https://localhost:8000`
