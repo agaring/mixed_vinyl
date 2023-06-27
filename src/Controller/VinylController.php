@@ -47,19 +47,19 @@ class VinylController extends AbstractController
                 'title' => 'PB & Jams',
                 'trackCount' => 14,
                 'genre' => 'Rock',
-                'createdAt' => new \DateTime('2021-10-02'),
+                'createdAt' => new \DateTime('2023-03-02'),
             ],
             [
                 'title' => 'Put a Hex on your Ex',
                 'trackCount' => 8,
                 'genre' => 'Heavy Metal',
-                'createdAt' => new \DateTime('2022-04-28'),
+                'createdAt' => new \DateTime('2023-06-05'),
             ],
             [
                 'title' => 'Spice Grills - Summer Tunes',
                 'trackCount' => 10,
                 'genre' => 'Pop',
-                'createdAt' => new \DateTime('2019-06-20'),
+                'createdAt' => new \DateTime('2022-06-20'),
             ],
         ];
     }
