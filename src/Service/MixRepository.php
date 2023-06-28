@@ -14,7 +14,7 @@ class MixRepository
     public function __construct(
         private HttpClientInterface $githubContentClient,
         private CacheInterface      $cache,
-        #[Autowire('%kernel.debug')]
+        #[Autowire('%kernel.debug%')]
         private bool                $isDebug,
         #[Autowire(service: 'twig.command.debug')]
         private DebugCommand        $twigDebugCommand
@@ -22,7 +22,7 @@ class MixRepository
     {
     }
 
-    public function findAll()
+    public function findAll(): array
     {
         /*
         $output = new BufferedOutput();

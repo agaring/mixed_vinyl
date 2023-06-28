@@ -13,12 +13,14 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 
 #[AsCommand(
     name: 'app:talk-to-me',
-    description: 'A self-aware command that can do... only one thing',
+    description: 'A self-aware command that can do... only one thing.',
 )]
 class TalkToMeCommand extends Command
 {
 
-    public function __construct(private MixRepository $mixRepository)
+    public function __construct(
+        private MixRepository $mixRepository
+    )
     {
         parent::__construct();
     }
@@ -27,17 +29,18 @@ class TalkToMeCommand extends Command
     {
         $this
             ->addArgument('name', InputArgument::OPTIONAL, 'Your name')
-            ->addOption('yell', null, InputOption::VALUE_NONE, 'Shall I yell');
+            ->addOption('yell', null, InputOption::VALUE_NONE, 'Shall I yell?')
+        ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
-        $name = $input->getArgument('name') ?: 'whoever your are';
+        $name = $input->getArgument('name') ?: 'whoever you are';
         $shouldYell = $input->getOption('yell');
 
         $message = sprintf('Hey %s!', $name);
-
+        
         if ($shouldYell) {
             $message = strtoupper($message);
         }
