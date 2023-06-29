@@ -5,7 +5,8 @@ Bonjour, je m'apelle Arnaud Garing.
 Pour me rafraichir la mémoire sur Symfony, je suis en train de suivre la série de tutoriel sur Symfony 6
 par [SymfonyCasts](https://symfonycasts.com/tracks/symfony).
 
-Ce dépot correspond à l'episode 1 de la série.
+Ce dépot correspond à l'episode
+3 ([Doctrine, Symfony 6 & the Database](https://symfonycasts.com/screencast/symfony-doctrine)) de la série.
 
 J'ai peu apprendre :
 
