@@ -52,7 +52,7 @@ npm run watch
 
 **Symfony**
 
-Vous pouvez utiliser Nginx ou Apache, mais le serveur web local de Symfony fonctionne encore mieux.
+Vous pouvez utiliser Nginx ou Apache, mais le serveur web local de Symfony est plus pratique pour le développement local.
 
 Pour installer le serveur web local Symfony, suivez les instructions de "Downloading the Symfony client" trouvées
 ici : https://symfony.com/download - vous n'avez besoin de faire cela qu'une seule fois sur votre système.
